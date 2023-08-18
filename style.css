@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Indie+Flower&family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&family=Indie+Flower&family=Kalam:wght@300&family=Poppins:wght@100&display=swap');
+
+:root {
+    --navy: #4b4b4b;
+    --yellow: #fbc531;
+    --green: #9AF2C1;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--navy);
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.5em;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(7,1fr);
+    /* grid-template-rows: repeat(auto-fill,1fr); */
+ 
+}
+
+.header {
+    width: 100%;
+    background: var(--yellow);
+    grid-column: 1 / span 7;
+}
+
+.weekdays, .day{
+    border: 2px solid black;
+    height: 80px;
+  
+}
+
+.weekdays{
+    text-align: center;
+}
+
+
+.day {
+    text-align: right;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background: black;
+    font-size: 2.5vh;
+    cursor: pointer; 
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    transform: translateX(-200px);
+    transition: transform 1s linear;
+   
+
+   
+}
+
+.right-side-bar { 
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  background: black;
+  font-size: 2.5vh;
+  cursor: pointer; 
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  transform: translateX(200px);
+  transition: transform 1s linear;
+  color: var(--yellow);
+  overflow: scroll;
+}
+
+
+
+.right-side-bar > * {
+  margin: 10px;
+}
+
+/* .sidebar > a:hover {    
+    background: gray;
+    filter: brightness(150%);
+    letter-spacing: 2px;
+    
+}    */
+
+div > a:hover{    
+  background: gray;
+  filter: brightness(150%);
+  letter-spacing: 2px;
+  
+} 
+
+.calendarMonths, .calendarYear {
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    color: var(--yellow);
+    
+}
+
+.icons {
+    display: inline-flex;
+    width: 50vw;
+    justify-content: flex-end;
+    
+    
+}
+
+/*Modal Styling*/
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.45);
+    font-family: "Raleway";
+    
+  
+  }
+
+
+  .modal-2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.45);
+    font-family: "Raleway";
+    
+  
+  }
+  
+  .input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+  }
+  
+  
+  form > div {
+    margin: 15px;
+    padding: 15px;
+    color: black;
+  }
+  
+  input {
+    background: transparent;
+    border:none;
+  }
+  
+  .time, .event, .dte, .location {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+  }
+  
+  
+  .submit {
+    text-align: left;
+    padding: 15px;
+    background: var(--yellow);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  .cancel {
+    text-align: right;
+    padding: 15px;
+    background: var(--navy);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+  }
+  .hide-element {
+    visibility: hidden;
+  }
+
+  .btn > h3 {
+    margin: 15px;
+  } 
+
+  .btn > h3 {
+    display: inline;
+  }
+  
+  .submit:hover {
+    background: white;
+    
+  }
+
+  .cancel:hover {
+    background: white;
+  
+  }
+
+  .event-set {
+    background:green;
+
+  }
+
+
+
+div > h3 {
+  text-decoration: underline;
+}
+
+div > p {
+  padding-left: 20px;
+  font-size: 0.8em;
+}
+
+div>h4 {
+  text-align: center;
+  border: 1px solid var(--yellow);
+  color: red;
+  background: var(--yellow);
+  font-weight: bolder;
+  border-radius: 5px;
+  transition: transform 1s linear;
+  
+  
+}
+
+div > h4:active {
+  transform: scale(0.85);
+}
+
+div >h4 {
+  margin: 5px;
+}
+
+.edit-event {
+  background-color: var(--green);
+  color: white ;
+  font-weight: bold;
+  
+}
+
+.save {
+  text-align: left;
+  padding: 15px;
+  background: var(--green);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+
+.save:hover {
+  background: white;
+
+}
+
+h6 {
+  color: yellow;
+}
+
+.hovered-event {
+  color: var(--green);
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.top-hover {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+  background-color: var(--green);
+  font-size: 30px;
+  text-align: center;
+  border-radius: 5px;
+  transform: translateY(-200px); 
+  transition: transform 1s linear; 
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+

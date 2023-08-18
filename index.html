@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Calendar App</title>
+</head>
+
+
+<body>
+
+  <div class="top-hover" id="top-hover">
+
+    <h5>Date: <span id="top-date"></span></h5>
+    <h5>Event: <span id="top-event"></span></h5>
+    <h5>Time: <span id="top-time"></span></h5>
+    <h5>Location: <span id="top-where"></span></h5>
+
+
+  </div>
+
+
+  <div class="sidebar" id="sidebar">
+
+    <div class="side-months" id="side-months">
+
+      <a href="#January">January</a>
+      <a href="#February">February</a>
+      <a href="#March">March</a>
+      <a href="#April">April</a>
+      <a href="#May">May</a>
+      <a href="#June">June</a>
+      <a href="#July">July</a>
+      <a href="#August">August</a>
+      <a href="#September">September</a>
+      <a href="#October">October</a>
+      <a href="#November">November</a>
+      <a href="#December">December</a>
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="right-side-bar" id="right-side-bar">
+    <p>Sort List</p>
+
+  </div>
+
+
+
+
+
+
+  <div class="grid" id="january-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="January"></span>
+      <span class="calendarYear"></span>
+
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+  </div>
+
+
+  <div class="grid" id="february-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="February"></span>
+      <span class="calendarYear"></span>
+
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+  <div class="grid" id="march-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="March"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+  <div class="grid" id="april-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="April"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+  <div class="grid" id="may-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="May"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+
+
+  <div class="grid" id="june-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="June"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+  <div class="grid" id="july-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="July"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+  <div class="grid" id="august-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="August"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+  <div class="grid" id="setempber-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="September"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+  <div class="grid" id="october-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="October"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+  <div class="grid" id="november-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="November"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+  <div class="grid" id="december-grid">
+
+
+    <div class="header">
+      <span class="calendarMonths" id="December"></span>
+      <span class="calendarYear"></span>
+    </div>
+
+    <div class="weekdays">Sun</div>
+    <div class="weekdays">Mon</div>
+    <div class="weekdays">Tues</div>
+    <div class="weekdays">Wed</div>
+    <div class="weekdays">Thu</div>
+    <div class="weekdays">Fri</div>
+    <div class="weekdays">Sat</div>
+
+
+
+
+  </div>
+
+  <!--Modal-->
+  <div class="modal hide-element" id="modal">
+    <div class="input">
+
+      <form action="" id="form">
+        <!-- <div class="dte">
+            <label for="Date">Date</label>
+            <input type="text" id="dte">
+        </div> -->
+        <div class="event">
+          <label for="">Event</label>
+          <input type="text" id="day-event">
+        </div>
+        <div class="time">
+          <label for="">Time</label>
+          <input type="text" id="time">
+        </div>
+        <div class="location">
+          <label for="">Location</label>
+          <input type="text" id="where">
+        </div>
+
+
+        <div class="btn">
+
+          <h3 class="submit" id="submit">Submit</h3>
+          <h3 class="cancel" id="cancel">Cancel</h3>
+
+        </div>
+
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- 2nd modal -->
+
+  <div class="modal hide-element" id="modal-2">
+    <div class="input">
+
+      <form action="" id="form">
+        <div class="dte">
+          <label for="Date">Date</label>
+          <input type="text" id="dte2">
+        </div>
+        <div class="event">
+          <label for="">Event</label>
+          <input type="text" id="day-event2">
+        </div>
+        <div class="time">
+          <label for="">Time</label>
+          <input type="text" id="time2">
+        </div>
+        <div class="location">
+          <label for="">Location</label>
+          <input type="text" id="where2">
+        </div>
+
+
+        <div class="btn">
+
+          <h3 class="save" id="save">Save</h3>
+          <h3 class="cancel" id="cancel2">Cancel</h3>
+
+        </div>
+
+
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+
+
+</html>
